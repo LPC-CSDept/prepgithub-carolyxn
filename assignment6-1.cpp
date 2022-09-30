@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std; 
 
-int inputValid(int a, int b);
+int inputValid(int a, int b); // call functions
 void prime(int begin, int end);
 
 int main ()
@@ -13,12 +13,12 @@ int main ()
     cout << "Enter in your range from [from, to]: " << endl;
     cin >> begin >> end;
     }
-    while (inputValid(begin, end));
-    prime(begin, end);
+    while (inputValid(begin, end)); // while loop to continue validating
+    prime(begin, end); 
     
 }
 
-int inputValid(int a, int b)
+int inputValid(int a, int b) // input validation function
 {
     if (a >= b || a < 2 || b < 0)
         return 1;
@@ -26,7 +26,7 @@ int inputValid(int a, int b)
         return 0;
 }
 
-void prime(int begin, int end)
+void prime(int begin, int end) // calculation function, returns 0 or 1
 {
     int x, y;
 
