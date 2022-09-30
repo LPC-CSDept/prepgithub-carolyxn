@@ -13,7 +13,7 @@ int main ()
     cout << "Enter in your range from [from, to]: " << endl;
     cin >> begin >> end;
     }
-    while (inputValid(begin, end)); // while loop to continue validating
+    while (inputValid(begin, end) == 1); // while loop to continue validating
     prime(begin, end); 
     
 }
