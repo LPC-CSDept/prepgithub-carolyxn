@@ -1,6 +1,9 @@
 #include <iostream>
 using namespace std; 
 
+int inputValid(int a, int b);
+void prime(int begin, int end);
+
 int main ()
 {
     int begin, end; 
@@ -31,7 +34,7 @@ void prime(int begin, int end)
     {
         if (x == 0 || x == 1)
             continue;
-        for (y = 2; y <= (p / 2); y++)
+        for (y = 2; y <= (x / 2); y++)
             if (x % y == 0)
                 break;
             if (y > (x/2))
