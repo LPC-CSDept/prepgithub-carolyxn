@@ -6,13 +6,14 @@ void prime(int, int);
 
 int main ()
 {
-    int begin, end; 
-    do
-    {
+    int begin, end, y; 
+
     cout << "Enter in your range from [from, to]: " << endl;
     cin >> begin >> end;
-    }
-    while (inputValid(begin, end) == 0); // while loop to continue validating
+    
+    y = inputValid(begin, end);// validation
+    if (!y)
+        exit(0);
     prime(begin, end); 
     
 }
