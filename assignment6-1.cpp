@@ -20,7 +20,7 @@ int main ()
 
 int inputValid(int a, int b) // input validation function
 {
-    if (a >= b || a < 0 || b < 0)
+    if (a > b || a < 0 || b < 0)
         return 0;
     else 
         return 1;
